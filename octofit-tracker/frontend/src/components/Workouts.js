@@ -17,13 +17,38 @@ const Workouts = () => {
   }, [endpoint]);
 
   return (
-    <div>
-      <h2>Workouts</h2>
-      <ul>
-        {workouts.map((workout, idx) => (
-          <li key={workout.id || idx}>{workout.name || JSON.stringify(workout)}</li>
-        ))}
-      </ul>
+    <div className="card shadow mb-4">
+      <div className="card-header bg-warning text-dark">
+        <h2 className="h4 mb-0">Workouts</h2>
+      </div>
+      <div className="card-body">
+        <div className="table-responsive">
+          <table className="table table-striped table-hover align-middle">
+            <thead className="table-light">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Typ</th>
+                <th>Dauer</th>
+              </tr>
+            </thead>
+            <tbody>
+              {workouts.length === 0 ? (
+                <tr><td colSpan="4" className="text-center">Keine Workouts gefunden.</td></tr>
+              ) : (
+                workouts.map((workout, idx) => (
+                  <tr key={workout.id || idx}>
+                    <td>{workout.id || idx + 1}</td>
+                    <td>{workout.name || '-'}</td>
+                    <td>{workout.type || '-'}</td>
+                    <td>{workout.duration || '-'}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 };
