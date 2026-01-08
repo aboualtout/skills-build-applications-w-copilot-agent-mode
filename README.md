@@ -1,14 +1,47 @@
-# Build Applications with GitHub Copilot Agent Mode
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+# OctoFit Tracker App
 
-Hey aboualtout!
+Die OctoFit Tracker App ist eine moderne Fitness- und Team-Tracking-Plattform. Sie bietet:
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+- Benutzer-Authentifizierung und Profile
+- Aktivitäten-Logging und Fortschrittsverfolgung
+- Team-Erstellung und Management
+- Wettbewerbsfähige Leaderboards
+- Personalisierte Workout-Vorschläge
 
-Remember, it's self-paced so feel free to take a break! ☕️
+Das Projekt besteht aus einem Django REST Backend (mit MongoDB) und einem React-Frontend mit Bootstrap-Design.
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/aboualtout/skills-build-applications-w-copilot-agent-mode/issues/1)
+## Ausführung
+
+### Backend starten
+1. Python-Umgebung aktivieren:
+	```bash
+	source octofit-tracker/backend/venv/bin/activate
+	```
+2. Abhängigkeiten installieren:
+	```bash
+	pip install -r octofit-tracker/backend/requirements.txt
+	```
+3. Backend-Server starten:
+	```bash
+	python octofit-tracker/backend/manage.py runserver 0.0.0.0:8000
+	```
+
+### Frontend starten
+1. In das Frontend-Verzeichnis gehen:
+	```bash
+	cd octofit-tracker/frontend
+	```
+2. Abhängigkeiten installieren:
+	```bash
+	npm install
+	```
+3. React-App starten:
+	```bash
+	npm start
+	```
+
+Das Frontend ist dann unter http://localhost:3000 erreichbar, das Backend unter http://localhost:8000.
 
 ---
 
