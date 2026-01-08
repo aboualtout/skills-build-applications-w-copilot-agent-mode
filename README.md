@@ -1,35 +1,47 @@
-<div align="center">
 
-# 🎉 Congratulations aboualtout! 🎉
+# OctoFit Tracker App
 
-<img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
+Die OctoFit Tracker App ist eine moderne Fitness- und Team-Tracking-Plattform. Sie bietet:
 
-### 🌟 You've successfully completed the exercise! 🌟
+- Benutzer-Authentifizierung und Profile
+- Aktivitäten-Logging und Fortschrittsverfolgung
+- Team-Erstellung und Management
+- Wettbewerbsfähige Leaderboards
+- Personalisierte Workout-Vorschläge
 
-## 🚀 Share Your Success!
+Das Projekt besteht aus einem Django REST Backend (mit MongoDB) und einem React-Frontend mit Bootstrap-Design.
 
-**Show off your new skills and inspire others!**
+## Ausführung
 
-<a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20the%20%22Build%20Applications%20with%20GitHub%20Copilot%20Agent%20Mode%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Faboualtout%2Fskills-build-applications-w-copilot-agent-mode%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20X-1da1f2?style=for-the-badge&logo=x&logoColor=white" alt="Share on X" />
-</a>
-<a href="https://bsky.app/intent/compose?text=I%20just%20completed%20the%20%22Build%20Applications%20with%20GitHub%20Copilot%20Agent%20Mode%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Faboualtout%2Fskills-build-applications-w-copilot-agent-mode%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Share on Bluesky" />
-</a>
-<a href="https://www.linkedin.com/feed/?shareActive=true&text=I%20just%20completed%20the%20%22Build%20Applications%20with%20GitHub%20Copilot%20Agent%20Mode%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Faboualtout%2Fskills-build-applications-w-copilot-agent-mode%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn" />
-</a>
+### Backend starten
+1. Python-Umgebung aktivieren:
+	```bash
+	source octofit-tracker/backend/venv/bin/activate
+	```
+2. Abhängigkeiten installieren:
+	```bash
+	pip install -r octofit-tracker/backend/requirements.txt
+	```
+3. Backend-Server starten:
+	```bash
+	python octofit-tracker/backend/manage.py runserver 0.0.0.0:8000
+	```
 
-### 🎯 What's Next?
+### Frontend starten
+1. In das Frontend-Verzeichnis gehen:
+	```bash
+	cd octofit-tracker/frontend
+	```
+2. Abhängigkeiten installieren:
+	```bash
+	npm install
+	```
+3. React-App starten:
+	```bash
+	npm start
+	```
 
-**Keep the momentum going!**
-
-[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/aboualtout/skills-build-applications-w-copilot-agent-mode/issues/1)
-[![GitHub Skills](https://img.shields.io/badge/Explore%20GitHub%20Skills-000000?style=for-the-badge&logo=github&logoColor=white)](https://learn.github.com/skills))
-
-*There's no better way to learn than building things!* 🚀
-
-</div>
+Das Frontend ist dann unter http://localhost:3000 erreichbar, das Backend unter http://localhost:8000.
 
 ---
 
